@@ -17,10 +17,16 @@ import java.util.List;
 public class GenAIServiceImpl implements GenAIService {
 
     private final Assistant assistant;
+    private final RAGAssistant ragAssistant;
 
     @Override
     public String getResponse(ChatRequest request) {
         return assistant.chat(request.userId(), request.question());
+    }
+
+    @Override
+    public String getResponseExtended(ChatRequest request) {
+        return ragAssistant.chat(request.userId(), request.question());
     }
 
     @Override

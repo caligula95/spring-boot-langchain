@@ -25,6 +25,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'dev.langchain4j', name: 'langchain4j', version: '0.28.0'
     implementation group: 'dev.langchain4j', name: 'langchain4j-open-ai', version: '0.28.0'
+    implementation group: 'dev.langchain4j', name: 'langchain4j-document-parser-apache-pdfbox', version: '0.30.0'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

@@ -22,6 +22,11 @@ public class GenerativeController {
         return new ChatResponse(genAIService.getResponse(request));
     }
 
+    @PostMapping("/extended")
+    public ChatResponse getChatResponseExtended(@RequestBody ChatRequest request) {
+        return new ChatResponse(genAIService.getResponseExtended(request));
+    }
+
     @PostMapping("/book")
     public BookModel getBookModelFromText(@RequestBody ChatRequest request) {
         return genAIService.getBookModelFromText(request.question());

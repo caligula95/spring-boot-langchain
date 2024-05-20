@@ -7,5 +7,7 @@ public interface GenAIService {
 
     String getResponse(ChatRequest request);
 
+    String getResponseExtended(ChatRequest request);
+
     BookModel getBookModelFromText(String question);
 }

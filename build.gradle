@@ -26,6 +26,9 @@ dependencies {
     implementation group: 'dev.langchain4j', name: 'langchain4j', version: '0.28.0'
     implementation group: 'dev.langchain4j', name: 'langchain4j-open-ai', version: '0.28.0'
     implementation group: 'dev.langchain4j', name: 'langchain4j-document-parser-apache-pdfbox', version: '0.30.0'
+    // https://mvnrepository.com/artifact/org.telegram/telegrambots-spring-boot-starter
+    implementation group: 'org.telegram', name: 'telegrambots-spring-boot-starter', version: '6.9.7.1'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
